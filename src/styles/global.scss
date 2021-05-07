@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.right {
+  animation: rightAnimation 0.5s !important;
+}
+
+.left {
+  animation: leftAnimation 0.5s !important;
+}
+
+.slide_planetDescription__18xzs.active {
+  display: grid;
+}
+
+.slide_slide__WHzy2.showingDescription {
+  animation: showDescription 0.5s;
+  .prev,
+  .next {
+    display: none;
+  }
+}
+
+@keyframes rightAnimation {
+  from {
+    opacity: 0;
+    transform: translate3d(-50px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes leftAnimation {
+  from {
+    opacity: 0;
+    transform: translate3d(50px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes showDescription {
+  from {
+    opacity: 0;
+    transform: translate3d(100px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
